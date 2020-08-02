@@ -4,13 +4,30 @@
 #include<string>
 
 void end();
+int IngresarPalabras(char palabra[20]);
 
 
 
 main()
 {
+    int letras=0;
+    char palabra[20];
+
+    IngresarPalabra(palabra);
+    
+    
+/*    for (int i = 0; i < n; i++)
+    {
+        printf("%c",palabra[i]);
+    }*/
+
+
+	end();
+}
+
+int IngresarPalabras(char palabra[20])
+{
     int n=0;
-    char palabra[20],caracter;
 
     do
     {
@@ -23,16 +40,9 @@ main()
         }
 
     } while (palabra[n]!='z');
-    
-    for (int i = 0; i < n; i++)
-    {
-        printf("%c",palabra[i]);
-    }
-    
 
-	end();
+    return n;
 }
-
 
 
 void end()
