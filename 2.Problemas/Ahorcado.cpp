@@ -38,6 +38,10 @@ int IngresarPalabras(char palabra[20])
         {
             n++;
         }
+        if (palabra[n]<=0 or palabra[n]>0)
+        {
+            printf("\n No puede ingresar numero, vuelva a intentarlo.");
+        }
 
     } while (palabra[n]!='z');
 
