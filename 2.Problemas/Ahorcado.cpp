@@ -31,7 +31,7 @@ int IngresarPalabra(char palabra[20])
     do
     {
         printf("\n Ingrese el caracter %d de su palabra, o ingerese Z para terminar: ",n+1);
-        scanf("%c",caracter);
+        scanf("%c",&caracter);
 
         if (caracter!='z')
         {
