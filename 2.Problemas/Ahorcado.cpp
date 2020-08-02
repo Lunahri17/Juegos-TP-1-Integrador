@@ -36,13 +36,15 @@ int IngresarPalabra(char palabra[20])
        
         if (palabra[n]!='z')
         {
-            n++;
+            if(isdigit(palabra[n])!=0)
+            {
+                printf("\n Solo se puede ingresar letras, vuelva a intentarlo.");
+            }
+            else
+            {
+                n++;
+            }
         }
-        if (palabra[n]<=0 or palabra[n]>0)
-        {
-            printf("\n No puede ingresar numero, vuelva a intentarlo.");
-        }
-
     } while (palabra[n]!='z');
 
     return n;
