@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<string.h>
+#include<cstring>
+#include<string>
 
 void end();
 int IngresarPalabra(char palabra[20]);
@@ -14,7 +15,6 @@ main()
 
     letras=IngresarPalabra(palabra);
     strupr(palabra);
-
     
     
     for (int i = 0; i < letras; i++)
