@@ -1,48 +1,39 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<math.h>
+#include<cstring>
+#include<string>
 
 void end();
-int IngresarPalabra(char palabra[20]);
+
 
 
 main()
 {
-    int letras=0;
-    char palabra[20];
-
-    letras=IngresarPalabra(palabra);
-    
-    for (int i = 0; i < letras; i++)
-    {
-        printf("\t%c",palabra[i]);
-    }
-    
-
-	
-	end();
-}
-
-int IngresarPalabra(char palabra[20])
-{
     int n=0;
-    char caracter;
+    char palabra[20],caracter;
 
     do
     {
-        printf("\n Ingrese el caracter %d de su palabra, o ingerese Z para terminar: ",n+1);
-        scanf("%c",&caracter);
-
-        if (caracter!='z')
+        printf("\n Ingrese la letra %d de su palabra, o ingrese z para terminar: ",n+1);
+        scanf("%s",&palabra[n]);
+       
+        if (palabra[n]!='z')
         {
-            palabra[n]=caracter;
             n++;
         }
-        
-    } while (caracter!='z');
+
+    } while (palabra[n]!='z');
     
-    return n;
+    for (int i = 0; i < n; i++)
+    {
+        printf("%c",palabra[i]);
+    }
+    
+
+	end();
 }
+
+
 
 void end()
 {
