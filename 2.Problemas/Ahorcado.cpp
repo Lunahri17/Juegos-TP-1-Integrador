@@ -4,7 +4,7 @@
 #include<string>
 
 void end();
-int IngresarPalabras(char palabra[20]);
+int IngresarPalabra(char palabra[20]);
 
 
 
@@ -13,19 +13,19 @@ main()
     int letras=0;
     char palabra[20];
 
-    IngresarPalabra(palabra);
+    letras=IngresarPalabra(palabra);
     
     
-/*    for (int i = 0; i < n; i++)
+    for (int i = 0; i < letras; i++)
     {
         printf("%c",palabra[i]);
-    }*/
+    }
 
 
 	end();
 }
 
-int IngresarPalabras(char palabra[20])
+int IngresarPalabra(char palabra[20])
 {
     int n=0;
 
