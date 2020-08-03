@@ -137,6 +137,7 @@ void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int l
         if (palabra[i]==letraIngresar)
         {
             palabraMostrar[i]=palabra[i];
+            LetrasEncontradas++;
             EstaLetra=true;
         }
     }
@@ -145,12 +146,7 @@ void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int l
     {
         Vida--;
     }
-    else
-    {
-        LetrasEncontradas++;
-    }
-    
-    
+
     printf("\nPalabra a adivinar:");
     Mostrar(palabraMostrar,letras);
     
