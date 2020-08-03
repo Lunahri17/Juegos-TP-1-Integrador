@@ -1,4 +1,3 @@
-
 //Esta función se encarga de mostrar los mensajes del estado del muñeco.
 void EstadoJugador(int V)
 {
@@ -55,5 +54,28 @@ void EstadoJugador(int V)
     default:
         printf("\n\tPor alguna extraña razón llegaste a este mensaje, lo cual no debería suceder.");
         break;
+    }
+}
+
+//Comprueba la igualdad entre 2 vectores.
+bool ComprobarIgualdad(char palabra[20],char palabraMostrar[20],int letras)
+{
+    int Contador=0;
+
+    for (int i = 0; i < letras; i++)
+    {
+        if (palabra[i]==palabramostrar[i])
+        {
+            Contador++;
+        }
+    }
+
+    if (Contador==letras)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
     }
 }
