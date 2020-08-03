@@ -66,7 +66,7 @@ void Inicio(char palabraMostrar[20],int letras)
     
 }
 
-void Mostrar(char vector[20],int letras)
+void Mostrar(char vector[20],int letras)3
 {
     printf("\nPalabra a adivinar:");
 
@@ -76,7 +76,7 @@ void Mostrar(char vector[20],int letras)
     }
 }
 
-char IngresarLetra(,int Jugada)
+char IngresarLetra(int Jugada)
 {
     printf("\nJugada #%d",Jugada);
     printf("\nIngrese una letra: ");
