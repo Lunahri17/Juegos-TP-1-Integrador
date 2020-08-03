@@ -7,7 +7,8 @@ void end();
 int IngresarPalabra(char palabra[20]);
 void Inicio(char palabraMostrar[20],int letras);
 void Mostrar(char vector[20],int letras);
-void IngresarLetra(char &letraIngresar,int letras,int Jugada);
+void IngresarLetra(char &letraIngresar,int Jugada);
+void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int letras,int &Jugada);
 
 main()
 {
@@ -26,8 +27,8 @@ main()
     printf("\nPalabra a adivinar:");
     Mostrar(palabraMostrar,letras);
     
-    IngresarLetra(letraIngresar,letra,Jugada);
-    
+    IngresarLetra(letraIngresar,Jugada);
+    Resultado(palabra,palabraMostrar,letraIngresar,letras,Jugada);
 
 	end();
 }
@@ -74,11 +75,16 @@ void Mostrar(char vector[20],int letras)
     }
 }
 
-void IngresarLetra(char &letraIngresar,int letras,int Jugada)
+void IngresarLetra(char &letraIngresar,int Jugada)
 {
     printf("\nJugada #%d",Jugada);
     printf("\nIngrese una letra: ");
     scanf("%c",&letraIngresar);    
+}
+
+void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int letras,int &Jugada)
+{
+    printf("\nRESULTADO JUGADA #%d",Jugada);
 }
 
 void end()
