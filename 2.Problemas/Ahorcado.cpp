@@ -9,7 +9,6 @@
 void end();
 int IngresarPalabra(char palabra[20]);
 void Inicio(char palabraMostrar[20],int letras);
-void Mostrar(char vector[20],int letras);
 char IngresarLetra(int Jugada);
 void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int letras,int &Jugada);
 void Puntaje();
@@ -70,14 +69,6 @@ main()
     while(stop==false);
 
 	end();
-}
-
-void Mostrar(char vector[20],int letras)
-{
-    for (int i = 0; i < letras; i++)
-    {
-        printf(" %c",vector[i]);
-    }
 }
 
 int IngresarPalabra(char palabra[20])
