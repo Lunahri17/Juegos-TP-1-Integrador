@@ -98,7 +98,14 @@ void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int l
     
     Mostrar(palabraMostrar,letras);
     
-
+    
+    
+    if (isdigit(letraIngresar)!=0)
+    {
+        printf("\nERROR! El caracter ingresado no corresponde a una letra!");
+    }
+    
+    
 }
 
 void end()
