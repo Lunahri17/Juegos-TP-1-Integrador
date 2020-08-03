@@ -10,8 +10,8 @@ void Mostrar(char vector[20],int letras);
 
 main()
 {
-    int letras=0;
-    char palabra[20],palabraMostrar[20];
+    int letras=0,Jugada=1;
+    char palabra[20],palabraMostrar[20],letraIngresar;
 
     letras=IngresarPalabra(palabra);
     
@@ -25,7 +25,7 @@ main()
     printf("\nPalabra a adivinar:");
     Mostrar(palabraMostrar,letras);
     
-    
+    IngresarLetra(letraIngresar,letra,Jugada);
 
 	end();
 }
@@ -72,6 +72,12 @@ void Mostrar(char vector[20],int letras)
     }
 }
 
+void IngresarLetra(char &letraIngresar,int letras,int Jugada)
+{
+    printf("\nJugada #%d",Jugada);
+    printf("\nIngrese una letra: ");
+    scanf("%c",&letraIngresar);    
+}
 
 void end()
 {
