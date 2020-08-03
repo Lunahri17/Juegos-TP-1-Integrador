@@ -15,7 +15,7 @@ void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int l
 void Puntaje();
 
 //Variables Globales:
-int Vida=10,LetrasEncontradas=0;
+int Vida=10;
 
 
 
@@ -58,7 +58,7 @@ main()
             stop=true;
         }
 
-        if (LetrasEncontradas==letras)
+        if (ComprobarIgualdad(palabra,palabraMostrar,letras))
         {
             printf("\nHAS GANADO LA PARTIDA!!!");
             
@@ -137,7 +137,6 @@ void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int l
         if (palabra[i]==letraIngresar)
         {
             palabraMostrar[i]=palabra[i];
-            LetrasEncontradas++;
             EstaLetra=true;
         }
     }
