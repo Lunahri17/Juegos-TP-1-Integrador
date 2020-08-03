@@ -21,6 +21,7 @@ main()
 {
     int letras=0,Jugada=1,i=0;
     char palabra[20],palabraMostrar[20],letraIngresar;
+    bool stop=false;
 
     letras=IngresarPalabra(palabra);
     
@@ -34,21 +35,26 @@ main()
     Mostrar(palabraMostrar,letras);
     
 
-    while (i<letras)
+    do
     {
         letraIngresar=IngresarLetra(Jugada);
         Resultado(palabra,palabraMostrar,letraIngresar,letras,Jugada);
         
-        if (isdigit(letraIngresar)==0)
-        {
-
-        }
-        else
+        if (isdigit(letraIngresar)!=0)
         {
             printf("\nERROR! El caracter ingresado no corresponde a una letra!");
         }
         
+        if (Vida==0)
+        {
+            printf("\n\nHas perdido la partida.");
+            printf("\nLa palabra era: ");
+            Mostrar(palabra,letras);
+            stop=true;
+        }
+        
     }
+    while(stop);
     
 
 	end();
@@ -129,7 +135,6 @@ void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int l
     {
         Vida--;
     }
-    
     
     Mostrar(palabraMostrar,letras);
     EstadoJugador(Vida);
