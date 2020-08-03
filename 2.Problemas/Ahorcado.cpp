@@ -41,7 +41,7 @@ main()
         
         if (isdigit(letraIngresar)==0)
         {
-            
+
         }
         else
         {
@@ -168,22 +168,22 @@ void EstadoJugador(int V)
 
     case 3:
         printf("Cabeza - Tronco - Brazo izquierdo - Brazo derecho - Pierna izquierda - Pierna derecha -");
-        printf("\tMano Izquierda");
+        printf("\n\t\tMano Izquierda");
         break;
 
     case 2:
         printf("Cabeza - Tronco - Brazo izquierdo - Brazo derecho - Pierna izquierda - Pierna derecha -");
-        printf("\tMano Izquierda - Mano derecha");
+        printf("\n\t\tMano Izquierda - Mano derecha");
         break;
 
     case 1:
         printf("Cabeza - Tronco - Brazo izquierdo - Brazo derecho - Pierna izquierda - Pierna derecha -");
-        printf("\t Mano Izquierda - Mano derecha - Pie izquierdo");
+        printf("\n\t\t Mano Izquierda - Mano derecha - Pie izquierdo");
         break;
 
     case 0:
         printf("Cabeza - Tronco - Brazo izquierdo - Brazo derecho - Pierna izquierda - Pierna derecha -");
-        printf("\t Mano Izquierda - Mano derecha - Pie izquierdo - Pie derecho");
+        printf("\n\t\t Mano Izquierda - Mano derecha - Pie izquierdo - Pie derecho");
         break;
 
     default:
