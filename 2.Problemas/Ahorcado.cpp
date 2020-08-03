@@ -54,8 +54,7 @@ main()
         }
 
     }
-    while(stop);
-    
+    while(stop==false);
 
 	end();
 }
