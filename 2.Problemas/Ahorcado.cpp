@@ -78,6 +78,8 @@ void Mostrar(char vector[20],int letras)
 
 char IngresarLetra(int Jugada)
 {
+    char letraIngresar;
+    
     printf("\nJugada #%d",Jugada);
     printf("\nIngrese una letra: ");
     scanf("%s",&letraIngresar); 
