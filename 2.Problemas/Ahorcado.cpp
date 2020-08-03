@@ -139,7 +139,7 @@ void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int l
 
 void EstadoJugador(int V)
 {
-    printf("\nEstado del muñeco: ");
+    printf("\nEstado del muneco: ");
     switch (V)
     {
     case 9:
