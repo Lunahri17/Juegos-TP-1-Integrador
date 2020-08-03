@@ -5,7 +5,7 @@
 
 void end();
 int IngresarPalabra(char palabra[20]);
-void Inicio(char palabra[20],char palabraMostrar[20],int letras);
+void Inicio(char palabraMostrar[20],int letras);
 
 
 main()
@@ -18,7 +18,7 @@ main()
     strupr(palabra); //Convierte las letras de minuscula a mayuscula.
     system("cls");
 
-    Inicio(palabra,palabraMostrar,letras);
+    Inicio(palabraMostrar,letras);
 
     
     for (int i = 0; i < letras; i++)
@@ -58,14 +58,11 @@ int IngresarPalabra(char palabra[20])
     return n;
 }
 
-void Inicio(char palabra[20],char palabraMostrar[20],int letras)
+void Inicio(char palabraMostrar[20],int letras)
 {
     for (int i = 0; i < letras; i++)
     {
-        if (palabra[letras]>='A' and palabra[letras]<'Z')
-        {
-            palabraMostrar[letras]='_';
-        }
+        palabraMostrar[letras]='_';
     }
     
 }
