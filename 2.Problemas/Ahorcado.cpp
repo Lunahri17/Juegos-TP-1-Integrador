@@ -66,7 +66,7 @@ void Inicio(char palabraMostrar[20],int letras)
     
 }
 
-void Mostrar(char vector[20],int letras)3
+void Mostrar(char vector[20],int letras)
 {
     printf("\nPalabra a adivinar:");
 
