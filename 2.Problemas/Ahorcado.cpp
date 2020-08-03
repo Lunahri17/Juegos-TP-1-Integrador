@@ -80,7 +80,8 @@ void IngresarLetra(char &letraIngresar,int Jugada)
 {
     printf("\nJugada #%d",Jugada);
     printf("\nIngrese una letra: ");
-    scanf("%s",&letraIngresar);    
+    scanf("%s",&letraIngresar); 
+    strupr(letraIngresar);
 }
 
 void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int letras,int &Jugada)
