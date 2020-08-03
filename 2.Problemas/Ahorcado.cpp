@@ -41,7 +41,7 @@ main()
         
         if (isdigit(letraIngresar)==0)
         {
-            i++;
+            
         }
         else
         {
