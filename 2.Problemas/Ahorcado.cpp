@@ -7,6 +7,7 @@ void end();
 int IngresarPalabra(char palabra[20]);
 void Inicio(char palabraMostrar[20],int letras);
 void Mostrar(char vector[20],int letras);
+void IngresarLetra(char &letraIngresar,int letras,int Jugada);
 
 main()
 {
@@ -26,6 +27,7 @@ main()
     Mostrar(palabraMostrar,letras);
     
     IngresarLetra(letraIngresar,letra,Jugada);
+    
 
 	end();
 }
