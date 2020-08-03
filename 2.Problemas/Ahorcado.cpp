@@ -98,7 +98,6 @@ char IngresarLetra(int Jugada)
     printf("\nJugada #%d",Jugada);
     printf("\nIngrese una letra: ");
     scanf("%s",&letraIngresar); 
-    
     strupr(&letraIngresar);
 
     return letraIngresar;
