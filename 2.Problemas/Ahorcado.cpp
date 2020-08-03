@@ -14,7 +14,8 @@ char IngresarLetra(int Jugada);
 void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int letras,int &Jugada);
 
 //Variables Globales:
-int Vida=10;
+int Vida=10,LetrasEncontradas=0;
+
 
 
 main()
@@ -24,7 +25,6 @@ main()
     bool stop=false;
 
     letras=IngresarPalabra(palabra);
-    
     strupr(palabra); //Convierte las letras de minuscula a mayuscula.
     system("cls");
 
@@ -35,7 +35,6 @@ main()
     printf("\nPalabra a adivinar: ");
     Mostrar(palabraMostrar,letras);
     
-
     do
     {
         letraIngresar=IngresarLetra(Jugada);
@@ -54,10 +53,23 @@ main()
             stop=true;
         }
 
+        if (LetrasEncontradas==letras)
+        {
+            
+            stop=true;
+        }
     }
     while(stop==false);
 
 	end();
+}
+
+void Mostrar(char vector[20],int letras)
+{
+    for (int i = 0; i < letras; i++)
+    {
+        printf(" %c",vector[i]);
+    }
 }
 
 int IngresarPalabra(char palabra[20])
@@ -94,14 +106,6 @@ void Inicio(char palabraMostrar[20],int letras)
     
 }
 
-void Mostrar(char vector[20],int letras)
-{
-    for (int i = 0; i < letras; i++)
-    {
-        printf(" %c",vector[i]);
-    }
-}
-
 char IngresarLetra(int Jugada)
 {
     char letraIngresar;
@@ -133,6 +137,11 @@ void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int l
     {
         Vida--;
     }
+    else
+    {
+        LetrasEncontradas++;
+    }
+    
     
     printf("\nPalabra a adivinar:");
     Mostrar(palabraMostrar,letras);
