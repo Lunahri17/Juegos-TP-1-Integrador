@@ -48,13 +48,20 @@ main()
         if (Vida==0)
         {
             printf("\n\nHas perdido la partida.");
+           
             printf("\nLa palabra era: ");
             Mostrar(palabra,letras);
+            
+            rintf("\nEl puntaje obtenido es de: 0 PUNTOS.");
+            
             stop=true;
         }
 
         if (LetrasEncontradas==letras)
         {
+            printf("\nHAS GANADO LA PARTIDA!!!");
+            
+            Puntaje();
             
             stop=true;
         }
@@ -151,7 +158,14 @@ void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int l
     Jugada++;
 }
 
+void Puntaje()
+{
+    int Partes=0;
+    
+    Partes=10-Vida;
 
+    printf("\nEl puntaje obtenido es de: %d PUNTOS.",50-(2*Partes));
+}
 
 void end()
 {
