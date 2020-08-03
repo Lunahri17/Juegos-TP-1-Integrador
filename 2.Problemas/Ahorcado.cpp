@@ -14,7 +14,8 @@ main()
     char palabra[20];
 
     letras=IngresarPalabra(palabra);
-    strupr(palabra);
+    
+    strupr(palabra); //Convierte las letras de minuscula a mayuscula.
     
     
     for (int i = 0; i < letras; i++)
