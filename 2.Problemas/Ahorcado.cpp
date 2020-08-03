@@ -3,12 +3,18 @@
 #include<cstring>
 #include<string>
 
+
+//Prototipos de funciones:
 void end();
 int IngresarPalabra(char palabra[20]);
 void Inicio(char palabraMostrar[20],int letras);
 void Mostrar(char vector[20],int letras);
 char IngresarLetra(int Jugada);
 void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int letras,int &Jugada);
+
+//Variables Globales:
+int Vida=10;
+
 
 main()
 {
@@ -105,6 +111,8 @@ char IngresarLetra(int Jugada)
 
 void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int letras,int &Jugada)
 {
+    bool EstaLetra=false;
+    
     printf("\nRESULTADO JUGADA #%d",Jugada);
 
     for (int i = 0; i < letras; i++)
@@ -112,12 +120,33 @@ void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int l
         if (palabra[i]==letraIngresar)
         {
             palabraMostrar[i]=palabra[i];
+            EstaLetra=true;
         }
     }
+
+    if (EstaLetra==false)
+    {
+        Vida--;
+    }
+    
     
     Mostrar(palabraMostrar,letras);
+    EstadoJugador(Vida);
 
     Jugada++;
+}
+
+void EstadoJugador(int V)
+{
+    switch (expression)
+    {
+    case /* constant-expression */:
+        /* code */
+        break;
+    
+    default:
+        break;
+    }
 }
 
 void end()
