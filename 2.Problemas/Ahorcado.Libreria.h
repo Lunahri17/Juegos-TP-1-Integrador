@@ -64,7 +64,7 @@ bool ComprobarIgualdad(char palabra[20],char palabraMostrar[20],int letras)
 
     for (int i = 0; i < letras; i++)
     {
-        if (palabra[i]==palabramostrar[i])
+        if (palabra[i]==palabraMostrar[i])
         {
             Contador++;
         }
@@ -79,3 +79,4 @@ bool ComprobarIgualdad(char palabra[20],char palabraMostrar[20],int letras)
         return false;
     }
 }
+
