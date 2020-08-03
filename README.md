@@ -1,1 +1,1 @@
-Aqui subiré los problemas que me tocaron realizar para el trabajo practico integrado de la materia de Algoritmos y Estructura de Datos.
+Aqui subiré los problemas que me tocaron realizar para el trabajo practico integrador de la materia de Algoritmos y Estructura de Datos.
