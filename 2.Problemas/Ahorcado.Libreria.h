@@ -1,3 +1,36 @@
+
+//Este comando lo que hace es mostrar el vector que se le envie.
+void Mostrar(char vector[20],int letras)
+{
+    for (int i = 0; i < letras; i++)
+    {
+        printf(" %c",vector[i]);
+    }
+}
+
+//Comprueba la igualdad entre 2 vectores.
+bool ComprobarIgualdad(char palabra[20],char palabraMostrar[20],int letras)
+{
+    int Contador=0;
+
+    for (int i = 0; i < letras; i++)
+    {
+        if (palabra[i]==palabraMostrar[i])
+        {
+            Contador++;
+        }
+    }
+
+    if (Contador==letras)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
 //Esta función se encarga de mostrar los mensajes del estado del muñeco.
 void EstadoJugador(int V)
 {
@@ -56,27 +89,3 @@ void EstadoJugador(int V)
         break;
     }
 }
-
-//Comprueba la igualdad entre 2 vectores.
-bool ComprobarIgualdad(char palabra[20],char palabraMostrar[20],int letras)
-{
-    int Contador=0;
-
-    for (int i = 0; i < letras; i++)
-    {
-        if (palabra[i]==palabraMostrar[i])
-        {
-            Contador++;
-        }
-    }
-
-    if (Contador==letras)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
-}
-
