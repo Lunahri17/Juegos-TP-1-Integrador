@@ -53,7 +53,7 @@ main()
             printf("\nLa palabra era: ");
             Mostrar(palabra,letras);
             
-            rintf("\nEl puntaje obtenido es de: 0 PUNTOS.");
+            printf("\nEl puntaje obtenido es de: 0 PUNTOS.");
             
             stop=true;
         }
