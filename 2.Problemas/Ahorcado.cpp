@@ -41,7 +41,7 @@ int IngresarPalabra(char palabra[20])
         printf("\n Ingrese la letra %d de su palabra, o ingrese z para terminar: ",n+1);
         scanf("%s",&palabra[n]);
        
-        if (palabra[n]!='z' or palabra[n]!='Z')
+        if (palabra[n]!='z' and palabra[n]!='Z')
         {
             if(isdigit(palabra[n])!=0)
             {
@@ -52,7 +52,7 @@ int IngresarPalabra(char palabra[20])
                 n++;
             }
         }
-    } while (palabra[n]!='z' or palabra[n]!='Z');
+    } while (palabra[n]!='z' and palabra[n]!='Z');
 
     return n;
 }
