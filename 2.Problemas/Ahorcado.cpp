@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include<cstring>
 #include<string>
+#include "Ahorcado.Libreria.h"
 
 
 //Prototipos de funciones:
@@ -11,7 +12,6 @@ void Inicio(char palabraMostrar[20],int letras);
 void Mostrar(char vector[20],int letras);
 char IngresarLetra(int Jugada);
 void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int letras,int &Jugada);
-void EstadoJugador(int V);
 
 //Variables Globales:
 int Vida=10;
@@ -52,7 +52,7 @@ main()
             Mostrar(palabra,letras);
             stop=true;
         }
-        
+
     }
     while(stop);
     
