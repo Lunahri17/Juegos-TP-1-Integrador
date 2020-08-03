@@ -110,7 +110,7 @@ void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int l
             }
         }    
 
-        
+        Mostrar(palabraMostrar,letras);
     }
     
     
