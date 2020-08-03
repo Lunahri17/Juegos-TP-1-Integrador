@@ -84,7 +84,30 @@ void IngresarLetra(char &letraIngresar,int Jugada)
 
 void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int letras,int &Jugada)
 {
+    int PosicionLetra[20],j=0;
+    
+    PosicionLetra[0]=0;
+    
     printf("\nRESULTADO JUGADA #%d",Jugada);
+
+    for (int i = 0; i < letras; i++)
+    {
+        if (palabra[i]==letraIngresar)
+        {
+            PosicionLetra[j]=i;
+            j++;
+        }
+    }
+    
+    for (int i = 0; i < letras; i++)
+    {
+        if (i==j)
+        {
+            palabraMostrar[i]=palabra[i];
+        }
+    }
+    
+
 }
 
 void end()
