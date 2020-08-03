@@ -79,7 +79,7 @@ void IngresarLetra(char &letraIngresar,int Jugada)
 {
     printf("\nJugada #%d",Jugada);
     printf("\nIngrese una letra: ");
-    scanf("%c",&letraIngresar);    
+    scanf("%s",&letraIngresar);    
 }
 
 void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int letras,int &Jugada)
