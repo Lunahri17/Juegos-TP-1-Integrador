@@ -41,7 +41,7 @@ int IngresarPalabra(char palabra[20])
         printf("\n Ingrese la letra %d de su palabra, o ingrese z para terminar: ",n+1);
         scanf("%s",&palabra[n]);
        
-        if (palabra[n]!='z')
+        if (palabra[n]!='z' or palabra[n]!='Z')
         {
             if(isdigit(palabra[n])!=0)
             {
@@ -52,7 +52,7 @@ int IngresarPalabra(char palabra[20])
                 n++;
             }
         }
-    } while (palabra[n]!='z');
+    } while (palabra[n]!='z' or palabra[n]!='Z');
 
     return n;
 }
@@ -81,13 +81,11 @@ void IngresarLetra(char &letraIngresar,int Jugada)
     printf("\nJugada #%d",Jugada);
     printf("\nIngrese una letra: ");
     scanf("%s",&letraIngresar); 
-    strupr(letraIngresar);
+    
 }
 
 void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int letras,int &Jugada)
 {
-    
-
     printf("\nRESULTADO JUGADA #%d",Jugada);
 
     for (int i = 0; i < letras; i++)
