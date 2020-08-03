@@ -62,7 +62,7 @@ void Inicio(char palabraMostrar[20],int letras)
 {
     for (int i = 0; i < letras; i++)
     {
-        palabraMostrar[letras]='_';
+        palabraMostrar[i]='_';
     }
     
 }
