@@ -7,7 +7,7 @@ void end();
 int IngresarPalabra(char palabra[20]);
 void Inicio(char palabraMostrar[20],int letras);
 void Mostrar(char vector[20],int letras);
-void IngresarLetra(char &letraIngresar,int Jugada);
+char IngresarLetra(int Jugada);
 void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int letras,int &Jugada);
 
 main()
@@ -26,7 +26,7 @@ main()
     printf("\n========");
     Mostrar(palabraMostrar,letras);
     
-    IngresarLetra(letraIngresar,Jugada);
+    letraIngresar=IngresarLetra(Jugada);
     Resultado(palabra,palabraMostrar,letraIngresar,letras,Jugada);
 
 	end();
@@ -76,12 +76,13 @@ void Mostrar(char vector[20],int letras)
     }
 }
 
-void IngresarLetra(char &letraIngresar,int Jugada)
+char IngresarLetra(,int Jugada)
 {
     printf("\nJugada #%d",Jugada);
     printf("\nIngrese una letra: ");
     scanf("%s",&letraIngresar); 
     
+    return letraIngresar;
 }
 
 void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int letras,int &Jugada)
