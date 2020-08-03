@@ -99,6 +99,8 @@ char IngresarLetra(int Jugada)
     printf("\nIngrese una letra: ");
     scanf("%s",&letraIngresar); 
     
+    strupr(&letraIngresar);
+
     return letraIngresar;
 }
 
