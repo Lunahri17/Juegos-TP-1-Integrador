@@ -24,7 +24,6 @@ main()
 
     printf("\nAHORCADO");
     printf("\n========");
-    printf("\nPalabra a adivinar:");
     Mostrar(palabraMostrar,letras);
     
     IngresarLetra(letraIngresar,Jugada);
@@ -69,6 +68,8 @@ void Inicio(char palabraMostrar[20],int letras)
 
 void Mostrar(char vector[20],int letras)
 {
+    printf("\nPalabra a adivinar:");
+
     for (int i = 0; i < letras; i++)
     {
         printf(" %c",vector[i]);
@@ -99,13 +100,19 @@ void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int l
         }
     }
     
-    for (int i = 0; i < letras; i++)
+    if (PosicionLetra[0]!=0)
     {
-        if (i==j)
+        for (int i = 0; i < letras; i++)
         {
-            palabraMostrar[i]=palabra[i];
-        }
+            if (i==j)
+            {
+                palabraMostrar[i]=palabra[i];
+            }
+        }    
+
+        
     }
+    
     
 
 }
