@@ -5,6 +5,9 @@ void EstadoJugador(int V)
     printf("\nEstado del muneco: ");
     switch (V)
     {
+    case 10:
+        break;
+
     case 9:
         printf("Cabeza");
         break;
