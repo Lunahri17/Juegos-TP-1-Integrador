@@ -12,7 +12,7 @@ void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int l
 
 main()
 {
-    int letras=0,Jugada=1;
+    int letras=0,Jugada=1,i=0;
     char palabra[20],palabraMostrar[20],letraIngresar;
 
     letras=IngresarPalabra(palabra);
@@ -26,8 +26,23 @@ main()
     printf("\n========");
     Mostrar(palabraMostrar,letras);
     
-    letraIngresar=IngresarLetra(Jugada);
-    Resultado(palabra,palabraMostrar,letraIngresar,letras,Jugada);
+
+    while (i<letras)
+    {
+        letraIngresar=IngresarLetra(Jugada);
+        Resultado(palabra,palabraMostrar,letraIngresar,letras,Jugada);
+        
+        if (isdigit(letraIngresar)==0)
+        {
+            i++;
+        }
+        else
+        {
+            printf("\nERROR! El caracter ingresado no corresponde a una letra!");
+        }
+        
+    }
+    
 
 	end();
 }
@@ -79,7 +94,7 @@ void Mostrar(char vector[20],int letras)
 char IngresarLetra(int Jugada)
 {
     char letraIngresar;
-    
+
     printf("\nJugada #%d",Jugada);
     printf("\nIngrese una letra: ");
     scanf("%s",&letraIngresar); 
@@ -100,14 +115,7 @@ void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int l
     }
     
     Mostrar(palabraMostrar,letras);
-    
-    
-    
-    if (isdigit(letraIngresar)!=0)
-    {
-        printf("\nERROR! El caracter ingresado no corresponde a una letra!");
-    }
-    
+
     Jugada++;
 }
 
