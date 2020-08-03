@@ -6,7 +6,7 @@
 void end();
 int IngresarPalabra(char palabra[20]);
 void Inicio(char palabraMostrar[20],int letras);
-
+void Mostrar(char vector[20],int letras);
 
 main()
 {
@@ -20,15 +20,12 @@ main()
 
     Inicio(palabraMostrar,letras);
 
+    printf("\nAHORCADO");
+    printf("\n========");
+    printf("\nPalabra a adivinar:");
+    Mostrar(palabraMostrar,letras);
     
-    for (int i = 0; i < letras; i++)
-    {
-        printf("%c",palabra[i]);
-    }
-    for (int i = 0; i < letras; i++)
-    {
-        printf(" %c",palabraMostrar[i]);
-    }
+    
 
 	end();
 }
@@ -66,6 +63,15 @@ void Inicio(char palabraMostrar[20],int letras)
     }
     
 }
+
+void Mostrar(char vector[20],int letras)
+{
+    for (int i = 0; i < letras; i++)
+    {
+        printf(" %c",vector[i]);
+    }
+}
+
 
 void end()
 {
