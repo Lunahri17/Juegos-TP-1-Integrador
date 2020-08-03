@@ -5,22 +5,29 @@
 
 void end();
 int IngresarPalabra(char palabra[20]);
-
+void Inicio(char palabra[20],char palabraMostrar[20],int letras);
 
 
 main()
 {
     int letras=0;
-    char palabra[20];
+    char palabra[20],palabraMostrar[20];
 
     letras=IngresarPalabra(palabra);
     
     strupr(palabra); //Convierte las letras de minuscula a mayuscula.
-    
+    system("cls");
+
+    Inicio(palabra,palabraMostrar,letras);
+
     
     for (int i = 0; i < letras; i++)
     {
         printf("%c",palabra[i]);
+    }
+    for (int i = 0; i < letras; i++)
+    {
+        printf(" %c",palabraMostrar[i]);
     }
 
 	end();
@@ -51,6 +58,17 @@ int IngresarPalabra(char palabra[20])
     return n;
 }
 
+void Inicio(char palabra[20],char palabraMostrar[20],int letras)
+{
+    for (int i = 0; i < letras; i++)
+    {
+        if (palabra[letras]>='A' and palabra[letras]<'Z')
+        {
+            palabraMostrar[letras]='_';
+        }
+    }
+    
+}
 
 void end()
 {
