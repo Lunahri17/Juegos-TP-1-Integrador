@@ -105,7 +105,7 @@ void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int l
         printf("\nERROR! El caracter ingresado no corresponde a una letra!");
     }
     
-    
+    Jugada++;
 }
 
 void end()
