@@ -25,10 +25,10 @@ main()
 	scanf("%d",&CantidadMaxima);
 
 	srand(time(0));
-	PilaMonedas=PilaRandom();
+	PilaMonedas=10+rand()%41;
 	printf("\nLa cantidad inicial de monedas en la pila es: %d\n",PilaMonedas);
 
-	
+
 	
 	end();
 }
