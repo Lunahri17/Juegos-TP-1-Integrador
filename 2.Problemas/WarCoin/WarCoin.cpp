@@ -98,12 +98,3 @@ void CompuRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas,bool &st
 	PilaMonedas-=NumCompu;
 	EstadoPila(PilaMonedas);
 }
-
-void end()
-{
-	printf("\n\n");
-	system("pause");
-    printf("\n\tGracias por utilizar el programa.");
- 	printf("\n\n");
-	system("pause");
-}

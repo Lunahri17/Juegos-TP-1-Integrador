@@ -21,3 +21,12 @@ void EstadoPila(int PilaMonedas)
 {
 	printf("\nQuedan %d monedas.",PilaMonedas);
 }
+
+void end()
+{
+	printf("\n\n");
+	system("pause");
+    printf("\n\tGracias por utilizar el programa.");
+ 	printf("\n\n");
+	system("pause");
+}
