@@ -32,14 +32,14 @@ main()
 	
 	if (QuienEmpieza())
 	{
-		printf("\nInicia la partida la computadora.");
+		printf("\nInicia la partida la computadora.\n");
 
 		CompuRetira(CantidadMinima,CantidadMaxima,PilaMonedas);
 		
 	}
 	else
 	{
-		printf("\nInicia la partida el usuario.");
+		printf("\nInicia la partida el usuario.\n");
 	}
 	
 	

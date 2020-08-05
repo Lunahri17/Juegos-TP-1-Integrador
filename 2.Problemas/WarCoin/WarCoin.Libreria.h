@@ -19,5 +19,5 @@ bool QuienEmpieza()
 
 void EstadoPila(int PilaMonedas)
 {
-	printf("\n\nQuedan %d monedas.",PilaMonedas);
+	printf("\nQuedan %d monedas.",PilaMonedas);
 }
