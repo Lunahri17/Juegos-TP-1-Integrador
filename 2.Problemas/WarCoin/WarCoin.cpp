@@ -73,7 +73,7 @@ void UsuarioRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas)
 		
 	} while (NumUsuario<CantidadMinima and NumUsuario<CantidadMaxima);
 	
-	Pilamonedas-=NumUsuario;
+	PilaMonedas-=NumUsuario;
 	EstadoPila(PilaMonedas);
 }
 
