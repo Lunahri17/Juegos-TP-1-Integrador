@@ -12,7 +12,7 @@ void end();
 
 main()
 {
-	int CantidadMinima=0,CantidadMaxima=0,PilaMondas=0;
+	int CantidadMinima=0,CantidadMaxima=0,PilaMonedas=0;
 
 	printf("\nWARCOIN");
 	printf("\n=======");
