@@ -98,5 +98,11 @@ void CompuRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas,bool &st
 		PilaMonedas-=NumCompu;
 		EstadoPila(PilaMonedas);
 	}
+	else
+	{
+		printf("\nEL JUGADOR GANO!!! Puntaje obtenido: 5");
+		
+		stop=true;
+	}
 	
 }
