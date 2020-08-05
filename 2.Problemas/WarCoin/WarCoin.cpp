@@ -47,8 +47,10 @@ main()
 	do
 	{
 		UsuarioRetira(CantidadMinima,CantidadMaxima,PilaMonedas,stop);
-		CompuRetira(CantidadMinima,CantidadMaxima,PilaMonedas,stop);
-
+		if (stop==false)
+		{
+			CompuRetira(CantidadMinima,CantidadMaxima,PilaMonedas,stop);
+		}
 	} while (stop==false);
 	
 
@@ -58,6 +60,7 @@ main()
 void UsuarioRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas,bool &stop)
 {
 	int NumUsuario=0;
+	bool stop2=false;
 
 	if (PilaMonedas!=0 and PilaMonedas>=CantidadMinima)
 	{
@@ -66,12 +69,16 @@ void UsuarioRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas,bool &
 			printf("\nIngresa la cantidad de monedas a eliminar: ");
 			scanf("%d",&NumUsuario);
 
+			stop2=true;
+
 			if (NumUsuario>CantidadMaxima or NumUsuario<CantidadMinima)
 			{
 				printf("\nERROR: Se deben desapilar entre %d y %d monedas. Volver a intentar!!!!",CantidadMinima,CantidadMaxima);
+
+				stop2=false;			
 			}
 			
-		} while (NumUsuario<CantidadMinima and NumUsuario<CantidadMaxima);
+		} while (stop==false);
 		
 		PilaMonedas-=NumUsuario;
 		EstadoPila(PilaMonedas);
