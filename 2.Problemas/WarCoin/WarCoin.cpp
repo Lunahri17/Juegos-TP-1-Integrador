@@ -82,8 +82,6 @@ void UsuarioRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas,bool &
 		
 		stop=true;
 	}
-	
-	
 }
 
 
@@ -92,9 +90,13 @@ void CompuRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas,bool &st
 {
 	int NumCompu=0;
 
-	NumCompu=(rand()%(CantidadMaxima - CantidadMinima - 1)) + CantidadMinima;
-	printf("\nLa computadora saco %d monedas de la pila.",NumCompu);
+	if (PilaMonedas!=0 and PilaMonedas>=CantidadMinima)
+	{
+		NumCompu=(rand()%(CantidadMaxima - CantidadMinima - 1)) + CantidadMinima;
+		printf("\nLa computadora saco %d monedas de la pila.",NumCompu);
+		
+		PilaMonedas-=NumCompu;
+		EstadoPila(PilaMonedas);
+	}
 	
-	PilaMonedas-=NumCompu;
-	EstadoPila(PilaMonedas);
 }
