@@ -15,3 +15,9 @@ bool QuienEmpieza()
 		return false;
 	}
 }
+
+
+void EstadoPila(int PilaMonedas)
+{
+	printf("\nQuedan %d monedas.",PilaMonedas);
+}

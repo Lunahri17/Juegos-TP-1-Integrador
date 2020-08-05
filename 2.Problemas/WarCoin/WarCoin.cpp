@@ -6,7 +6,6 @@
 
 //Protipos de funciones:
 void end();
-void EstadoPila(int PilaMonedas);
 void CompuRetira(int CantidadMinima,int CantidadMaxima,int PilaMonedas);
 
 
@@ -46,11 +45,6 @@ main()
 	Juego(CantidadMinima,CantidadMaxima,PilaMonedas);
 	
 	end();
-}
-
-void EstadoPila(int PilaMonedas)
-{
-	printf("\nQuedan %d monedas.",PilaMonedas);
 }
 
 void CompuRetira(int CantidadMinima,int CantidadMaxima,int PilaMonedas)
