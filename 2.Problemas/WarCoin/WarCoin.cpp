@@ -9,9 +9,6 @@ void end();
 void CompuRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas,bool &stop);
 void UsuarioRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas,bool &stop);
 
-//Variables globales:
-
-
 main()
 {
 	int CantidadMinima=0,CantidadMaxima=0,PilaMonedas=0;
@@ -36,13 +33,11 @@ main()
 		printf("\nInicia la partida la computadora.\n");
 
 		CompuRetira(CantidadMinima,CantidadMaxima,PilaMonedas,stop);
-		
 	}
 	else
 	{
 		printf("\nInicia la partida el usuario.\n");
 	}
-	
 	
 	do
 	{
@@ -53,7 +48,6 @@ main()
 		}
 	} while (stop==false);
 	
-
 	end();
 }
 
@@ -95,15 +89,13 @@ void UsuarioRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas,bool &
 	}
 }
 
-
-
 void CompuRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas,bool &stop)
 {
 	int NumCompu=0;
 
 	if (PilaMonedas!=0 and PilaMonedas>=CantidadMinima)
 	{
-		if (Pilamonedas<=CantidadMaxima)
+		if (PilaMonedas<=CantidadMaxima)
 		{
 			NumCompu=(rand()%(PilaMonedas - CantidadMinima - 1)) + CantidadMinima;	
 		}
@@ -123,5 +115,4 @@ void CompuRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas,bool &st
 		
 		stop=true;
 	}
-	
 }
