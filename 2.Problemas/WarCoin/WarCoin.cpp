@@ -63,7 +63,7 @@ void UsuarioRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas)
 
 	do
 	{
-		printf("\nIngresa la cantidad de monedas a eliminar");
+		printf("\nIngresa la cantidad de monedas a eliminar: ");
 		scanf("%d",&NumUsuario);
 
 		if (NumUsuario>CantidadMaxima or NumUsuario<CantidadMinima)
@@ -81,8 +81,12 @@ void UsuarioRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas)
 
 void CompuRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas)
 {
-	PilaMonedas-=(rand()%(CantidadMaxima - CantidadMinima - 1)) + CantidadMinima;
+	int NumCompu=0;
 
+	NumCompu=(rand()%(CantidadMaxima - CantidadMinima - 1)) + CantidadMinima;
+	printf("\nLa computadora saco %d monedas de la pila.",NumCompu);
+	
+	PilaMonedas-=NumCompu;
 	EstadoPila(PilaMonedas);
 }
 
