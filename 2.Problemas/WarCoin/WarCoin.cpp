@@ -6,13 +6,12 @@
 void end();
 
 
-//Variables globales:¿
+//Variables globales:
 
 
 main()
 {
-
-    
+	
 	
 	end();
 }
