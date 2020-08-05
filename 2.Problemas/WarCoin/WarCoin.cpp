@@ -74,10 +74,14 @@ void UsuarioRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas,bool &
 			if (NumUsuario>CantidadMaxima or NumUsuario<CantidadMinima)
 			{
 				printf("\nERROR: Se deben desapilar entre %d y %d monedas. Volver a intentar!!!!",CantidadMinima,CantidadMaxima);
-
 				stop2=false;			
 			}
 			
+			if (NumUsuario>PilaMonedas)
+			{
+				printf("\nERROR: No puedes quitar mas monedas de las que quedan. Volver a intentar!!!!");
+				stop2=false;
+			}
 		} while (stop2==false);
 		
 		PilaMonedas-=NumUsuario;
