@@ -6,7 +6,7 @@
 
 //Protipos de funciones:
 void end();
-void CompuRetira(int CantidadMinima,int CantidadMaxima,int PilaMonedas);
+void CompuRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas);
 
 
 //Variables globales:
@@ -47,7 +47,7 @@ main()
 	{
 		UsuarioRetira(CantidadMinima,CantidadMaxima,PilaMonedas);
 		CompuRetira(CantidadMinima,CantidadMaxima,PilaMonedas);
-		
+
 	} while (PilaMonedas!=0 and PilaMonedas>=CantidadMinima);
 	
 	
@@ -57,15 +57,28 @@ main()
 	end();
 }
 
-void UsuarioRetira(int CantidadMinima,int CantidadMaxima,int PilaMonedas)
+void UsuarioRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas)
 {
-	int NumUsuario;
+	int NumUsuario=0;
 
+	do
+	{
+		printf("\nIngresa la cantidad de monedas a eliminar");
+		scanf("%d",&NumUsuario);
+
+		if (NumUsuario>CantidadMaxima or NumUsuario<CantidadMinima)
+		{
+			printf("\nERROR: Se deben desapilar entre %d y %d monedas. Volver a intentar!!!!",CantidadMinima,CantidadMaxima);
+		}
+		
+	} while (NumUsuario<CantidadMinima and NumUsuario<CantidadMaxima);
+	
+	Pila
 }
 
 
 
-void CompuRetira(int CantidadMinima,int CantidadMaxima,int PilaMonedas)
+void CompuRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas)
 {
 	PilaMonedas-=(rand()%(CantidadMaxima - CantidadMinima - 1)) + CantidadMinima;
 
