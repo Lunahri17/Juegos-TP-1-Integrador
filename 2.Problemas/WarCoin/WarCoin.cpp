@@ -6,7 +6,6 @@
 
 //Protipos de funciones:
 void end();
-bool QuienEmpieza();
 
 
 //Variables globales:
@@ -32,11 +31,11 @@ main()
 	
 	if (QuienEmpieza())
 	{
-		printf("\nempieza la pc");
+		printf("\nInicia la partida la computadora.");
 	}
 	else
 	{
-		printf("\nempieza el jugador");
+		printf("\nInicia la partida el usuario.");
 	}
 	
 	
@@ -44,21 +43,7 @@ main()
 	end();
 }
 
-bool QuienEmpieza()
-{
-	int num;
 
-	num=1+rand()%10;
-
-	if (num % 2 == 0)
-	{
-		return true;
-	}
-	else
-	{
-		return false;
-	}
-}
 
 
 void end()
