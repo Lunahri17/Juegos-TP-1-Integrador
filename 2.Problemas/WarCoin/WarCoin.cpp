@@ -103,7 +103,15 @@ void CompuRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas,bool &st
 
 	if (PilaMonedas!=0 and PilaMonedas>=CantidadMinima)
 	{
-		NumCompu=(rand()%(CantidadMaxima - CantidadMinima - 1)) + CantidadMinima;
+		if (Pilamonedas<=CantidadMaxima)
+		{
+			NumCompu=(rand()%(PilaMonedas - CantidadMinima - 1)) + CantidadMinima;	
+		}
+		else
+		{
+			NumCompu=(rand()%(CantidadMaxima - CantidadMinima - 1)) + CantidadMinima;
+		}
+		
 		printf("\nLa computadora saco %d monedas de la pila.",NumCompu);
 		
 		PilaMonedas-=NumCompu;
