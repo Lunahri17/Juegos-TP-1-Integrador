@@ -1,4 +1,3 @@
-
 //Función que determina quien empieza la partida.
 bool QuienEmpieza()
 {
@@ -15,7 +14,6 @@ bool QuienEmpieza()
 		return false;
 	}
 }
-
 
 void EstadoPila(int PilaMonedas)
 {
