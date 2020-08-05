@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include<math.h>
 #include<ctime>
+#include "WarCoin.Libreria.h"
 
 //Protipos de funciones:
 void end();
@@ -24,8 +25,10 @@ main()
 	scanf("%d",&CantidadMaxima);
 
 	srand(time(0));
-	PilaMonedas=10+rand()%50;
+	PilaMonedas=PilaRandom();
 	printf("\nLa cantidad inicial de monedas en la pila es: %d\n",PilaMonedas);
+
+	
 	
 	end();
 }
