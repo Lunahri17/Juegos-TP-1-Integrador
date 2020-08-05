@@ -42,10 +42,28 @@ main()
 		printf("\nInicia la partida el usuario.");
 	}
 	
-	Juego(CantidadMinima,CantidadMaxima,PilaMonedas);
+	
+	do
+	{
+		UsuarioRetira(CantidadMinima,CantidadMaxima,PilaMonedas);
+		CompuRetira(CantidadMinima,CantidadMaxima,PilaMonedas);
+		
+	} while (PilaMonedas!=0 and PilaMonedas>=CantidadMinima);
+	
+	
+	
+	
 	
 	end();
 }
+
+void UsuarioRetira(int CantidadMinima,int CantidadMaxima,int PilaMonedas)
+{
+	int NumUsuario;
+
+}
+
+
 
 void CompuRetira(int CantidadMinima,int CantidadMaxima,int PilaMonedas)
 {
