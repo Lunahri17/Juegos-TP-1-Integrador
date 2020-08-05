@@ -6,6 +6,8 @@
 
 //Protipos de funciones:
 void end();
+void EstadoPila(int PilaMonedas);
+void CompuRetira(int CantidadMinima,int CantidadMaxima,int PilaMonedas);
 
 
 //Variables globales:
@@ -32,19 +34,31 @@ main()
 	if (QuienEmpieza())
 	{
 		printf("\nInicia la partida la computadora.");
+
+		CompuRetira(CantidadMinima,CantidadMaxima,PilaMonedas);
+		
 	}
 	else
 	{
 		printf("\nInicia la partida el usuario.");
 	}
 	
-	
+	Juego(CantidadMinima,CantidadMaxima,PilaMonedas);
 	
 	end();
 }
 
+void EstadoPila(int PilaMonedas)
+{
+	printf("\nQuedan %d monedas.",PilaMonedas);
+}
 
+void CompuRetira(int CantidadMinima,int CantidadMaxima,int PilaMonedas)
+{
+	PilaMonedas-=(rand()%(CantidadMaxima - CantidadMinima - 1)) + CantidadMinima;
 
+	EstadoPila(PilaMonedas);
+}
 
 void end()
 {
