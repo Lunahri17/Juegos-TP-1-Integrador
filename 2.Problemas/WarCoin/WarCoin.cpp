@@ -6,6 +6,7 @@
 
 //Protipos de funciones:
 void end();
+bool QuienEmpieza();
 
 
 //Variables globales:
@@ -28,11 +29,36 @@ main()
 	PilaMonedas=10+rand()%41;
 	printf("\nLa cantidad inicial de monedas en la pila es: %d\n",PilaMonedas);
 
-
+	
+	if (QuienEmpieza())
+	{
+		printf("\nempieza la pc");
+	}
+	else
+	{
+		printf("\nempieza el jugador");
+	}
+	
+	
 	
 	end();
 }
 
+bool QuienEmpieza()
+{
+	int num;
+
+	num=1+rand()%10;
+
+	if (num % 2 == 0)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
 
 
 void end()
