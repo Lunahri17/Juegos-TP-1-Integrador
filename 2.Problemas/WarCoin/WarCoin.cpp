@@ -35,7 +35,7 @@ main()
 	{
 		printf("\nInicia la partida la computadora.\n");
 
-		CompuRetira(CantidadMinima,CantidadMaxima,PilaMonedas);
+		CompuRetira(CantidadMinima,CantidadMaxima,PilaMonedas,stop);
 		
 	}
 	else
