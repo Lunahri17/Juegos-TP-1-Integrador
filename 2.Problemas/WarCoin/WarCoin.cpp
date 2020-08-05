@@ -7,7 +7,7 @@
 //Protipos de funciones:
 void end();
 void CompuRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas);
-
+void UsuarioRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas);
 
 //Variables globales:
 
@@ -73,7 +73,8 @@ void UsuarioRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas)
 		
 	} while (NumUsuario<CantidadMinima and NumUsuario<CantidadMaxima);
 	
-	Pila
+	Pilamonedas-=NumUsuario;
+	EstadoPila(PilaMonedas);
 }
 
 
