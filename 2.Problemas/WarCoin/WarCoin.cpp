@@ -84,7 +84,6 @@ void UsuarioRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas,bool &
 	else
 	{
 		printf("\nLA COMPUTADORA GANO!!! Puntaje obtenido: 0");
-		
 		stop=true;
 	}
 }
@@ -97,11 +96,11 @@ void CompuRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas,bool &st
 	{
 		if (PilaMonedas<=CantidadMaxima)
 		{
-			NumCompu=(rand()%(PilaMonedas - CantidadMinima - 1)) + CantidadMinima;	
+			NumCompu=(rand()%(PilaMonedas - CantidadMinima + 1)) + CantidadMinima;	
 		}
 		else
 		{
-			NumCompu=(rand()%(CantidadMaxima - CantidadMinima - 1)) + CantidadMinima;
+			NumCompu=(rand()%(CantidadMaxima - CantidadMinima + 1)) + CantidadMinima;
 		}
 		
 		printf("\nLa computadora saco %d monedas de la pila.",NumCompu);
@@ -112,7 +111,6 @@ void CompuRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas,bool &st
 	else
 	{
 		printf("\nEL JUGADOR GANO!!! Puntaje obtenido: 5");
-		
 		stop=true;
 	}
 }
