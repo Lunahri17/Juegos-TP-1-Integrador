@@ -27,7 +27,7 @@ main()
 
 	srand(time(0));
 	PilaMonedas=10+rand()%41;
-	printf("\nLa cantidad inicial de monedas en la pila es: %d\n",PilaMonedas);
+	printf("\nLa cantidad inicial de monedas en la pila es: %d",PilaMonedas);
 
 	
 	if (QuienEmpieza())
