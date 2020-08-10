@@ -96,6 +96,7 @@ int IngresarPalabra(char palabra[20])
     return n;
 }
 
+//Esta función lo que hace que genera un vector con la cantidad de guines que tiene de letras la palabra original.
 void Inicio(char palabraMostrar[20],int letras)
 {
     for (int i = 0; i < letras; i++)
