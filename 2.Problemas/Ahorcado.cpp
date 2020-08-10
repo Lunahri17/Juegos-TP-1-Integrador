@@ -154,11 +154,3 @@ void Puntaje()
     printf("\nEl puntaje obtenido es de: %d PUNTOS.",50-(2*Partes));
 }
 
-void end()
-{
-	printf("\n\n");
-	system("pause");
-    printf("\n\tGracias por utilizar el programa.");
- 	printf("\n\n");
-	system("pause");
-}
