@@ -10,18 +10,18 @@ void end();
 int IngresarPalabra(char palabra[20]);
 void Inicio(char palabraMostrar[20],int letras);
 char IngresarLetra(int Jugada);
-void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int letras,int &Jugada);
+void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresada,int letras,int &Jugada);
 void Puntaje();
 
 //Variables Globales:
 int Vida=10;
-
+char LetrasIngresadas[200];
 
 
 main()
 {
     int letras=0,Jugada=1,i=0;
-    char palabra[20],palabraMostrar[20],letraIngresar;
+    char palabra[20],palabraMostrar[20],letraIngresada;
     bool stop=false;
 
     letras=IngresarPalabra(palabra);
@@ -37,10 +37,10 @@ main()
     
     do
     {
-        letraIngresar=IngresarLetra(Jugada);
-        Resultado(palabra,palabraMostrar,letraIngresar,letras,Jugada);
+        letraIngresada=IngresarLetra(Jugada);
+        Resultado(palabra,palabraMostrar,letraIngresada,letras,Jugada);
         
-        if (isdigit(letraIngresar)!=0)
+        if (isdigit(letraIngresada)!=0)
         {
             printf("\nERROR! El caracter ingresado no corresponde a una letra!");
         }
@@ -107,17 +107,17 @@ void Inicio(char palabraMostrar[20],int letras)
 
 char IngresarLetra(int Jugada)
 {
-    char letraIngresar;
+    char letraIngresada;
 
     printf("\nJugada #%d",Jugada);
     printf("\nIngrese una letra: ");
-    scanf("%s",&letraIngresar); 
-    strupr(&letraIngresar);
+    scanf("%s",&letraIngresada); 
+    strupr(&letraIngresada);
 
-    return letraIngresar;
+    return letraIngresada;
 }
 
-void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int letras,int &Jugada)
+void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresada,int letras,int &Jugada)
 {
     bool EstaLetra=false;
     
@@ -125,7 +125,7 @@ void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int l
 
     for (int i = 0; i < letras; i++)
     {
-        if (palabra[i]==letraIngresar)
+        if (palabra[i]==letraIngresada)
         {
             palabraMostrar[i]=palabra[i];
             EstaLetra=true;
@@ -141,6 +141,10 @@ void Resultado(char palabra[20],char palabraMostrar[20],char letraIngresar,int l
     Mostrar(palabraMostrar,letras);
     
     EstadoJugador(Vida);
+
+    LetrasIngresadas[Jugada]=letraIngresada;
+    printf("\nLetras ya ingresadas:");
+    Mostrar(LetrasIngresadas,Jugada);
 
     Jugada++;
 }
