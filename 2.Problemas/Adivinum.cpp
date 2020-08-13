@@ -85,6 +85,7 @@ void adv(int Num1,int Nume)
 			printf("\nHas Perdido el numero era: %d\n",Nume);
 		}
 		printf("\nTu Puntaje es de %d\n",puntaje);
+		printf("\n\n");
 		system("pause");
 }
 	
