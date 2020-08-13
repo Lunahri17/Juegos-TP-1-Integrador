@@ -39,8 +39,6 @@ main()
         case 2:
             system("cls");
             system("Adivinum");
-            printf("\n\n");
-            system("pause");
             break;
         
         case 3:
@@ -67,7 +65,6 @@ main()
             printf("\nIngresaste una opcion erronea, Vuelva a intentarlo.");
             break;
         }
-
 
     } while (opcion!=5);
 }
