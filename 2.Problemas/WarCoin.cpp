@@ -5,7 +5,6 @@
 #include "WarCoin.Libreria.h"
 
 //Protipos de funciones:
-
 void CompuRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas,bool &stop);
 void UsuarioRetira(int CantidadMinima,int CantidadMaxima,int &PilaMonedas,bool &stop);
 
