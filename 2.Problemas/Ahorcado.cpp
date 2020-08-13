@@ -6,7 +6,6 @@
 
 
 //Prototipos de funciones:
-void end();
 int IngresarPalabra(char palabra[20]);
 void Inicio(char palabraMostrar[20],int letras);
 char IngresarLetra(int Jugada);
@@ -67,8 +66,6 @@ main()
         }
     }
     while(stop==false);
-
-	end();
 }
 
 int IngresarPalabra(char palabra[20])
