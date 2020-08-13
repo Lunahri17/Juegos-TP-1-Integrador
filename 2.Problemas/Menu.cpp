@@ -2,12 +2,6 @@
 #include<stdlib.h>
 #include<math.h>
 
-//Protipos de funciones:
-
-
-//Variables globales:
-
-
 main()
 {
 	int opcion;
