@@ -32,29 +32,34 @@ main()
         case 1:
             system("cls");
             system("MAYMEN");
+            printf("\n\n");
             system("pause");
             break;
         
         case 2:
             system("cls");
             system("MAYMEN");
+            printf("\n\n");
             system("pause");
             break;
         
         case 3:
             system("cls");
             system("MAYMEN");
+            printf("\n\n");
             system("pause");
             break;
         
         case 4:
             system("cls");
             system("MAYMEN");
+            printf("\n\n");
             system("pause");
             break;
         
         case 5:
             printf("\n\tGracias por utilizar el programa.");
+            printf("\n\n");
             system("pause");
             break;
 
