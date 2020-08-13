@@ -38,7 +38,7 @@ main()
         
         case 2:
             system("cls");
-            system("MAYMEN");
+            system("Adivinum");
             printf("\n\n");
             system("pause");
             break;
