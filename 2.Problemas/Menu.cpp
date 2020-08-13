@@ -3,7 +3,6 @@
 #include<math.h>
 
 //Protipos de funciones:
-void end();
 
 
 //Variables globales:
@@ -31,27 +30,39 @@ main()
         switch (opcion)
         {
         case 1:
-            
+            system("cls")
+            system("MAYMEN");
+            system("pause");
             break;
         
+        case 2:
+            system("cls")
+            system("MAYMEN");
+            system("pause");
+            break;
+        
+        case 3:
+            system("cls")
+            system("MAYMEN");
+            system("pause");
+            break;
+        
+        case 4:
+            system("cls")
+            system("MAYMEN");
+            system("pause");
+            break;
+        
+        case 5:
+            printf("\n\tGracias por utilizar el programa.");
+            system("pause");
+            break;
+
         default:
+            printf("\nIngresaste una opcion erronea, Vuelva a intentarlo.");
             break;
         }
 
 
     } while (opcion!=5);
-    
-	
-	end();
-}
-
-
-
-void end()
-{
-	printf("\n\n");
-	system("pause");
-    printf("\n\tGracias por utilizar el programa.");
- 	printf("\n\n");
-	system("pause");
 }
