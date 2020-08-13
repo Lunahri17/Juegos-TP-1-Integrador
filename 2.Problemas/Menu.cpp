@@ -30,25 +30,25 @@ main()
         switch (opcion)
         {
         case 1:
-            system("cls")
+            system("cls");
             system("MAYMEN");
             system("pause");
             break;
         
         case 2:
-            system("cls")
+            system("cls");
             system("MAYMEN");
             system("pause");
             break;
         
         case 3:
-            system("cls")
+            system("cls");
             system("MAYMEN");
             system("pause");
             break;
         
         case 4:
-            system("cls")
+            system("cls");
             system("MAYMEN");
             system("pause");
             break;
