@@ -23,6 +23,8 @@ main()
     char palabra[20],palabraMostrar[20],letraIngresada;
     bool stop=false;
 
+    printf("\nAHORCADO");
+    printf("\n========");
     letras=IngresarPalabra(palabra);
     strupr(palabra); //Convierte las letras de minuscula a mayuscula.
     system("cls");
