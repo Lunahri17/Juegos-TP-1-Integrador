@@ -43,14 +43,14 @@ main()
         
         case 3:
             system("cls");
-            system("MAYMEN");
+            system("WarCoin");
             printf("\n\n");
             system("pause");
             break;
         
         case 4:
             system("cls");
-            system("MAYMEN");
+            system("Ahorcado");
             printf("\n\n");
             system("pause");
             break;
