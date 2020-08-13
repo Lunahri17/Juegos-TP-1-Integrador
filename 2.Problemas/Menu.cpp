@@ -11,14 +11,14 @@ main()
     {
         system("cls");
         printf("\n\tBienvenidos a los juegos de consola!!");
-        printf("\n\nCategoria: Juegos numericos.");
-        printf("\n\n1.MayMen.");
-        printf("\n\n2.Adivinum.");
-        printf("\n\n3.WarCoin.");
-        printf("\n\nCategoria: Juegos de letras.");
-        printf("\n\n4.Ahorcado.");
-        printf("\n\n5. Salir.");
-        printf("\n\nIngrese el numero del juego que dsesea abrir: ");
+        printf("\n\n Categoria: Juegos numericos.");
+        printf("\n\n 1. MayMen.");
+        printf("\n\n 2. Adivinum.");
+        printf("\n\n 3. WarCoin.");
+        printf("\n\n Categoria: Juegos de letras.");
+        printf("\n\n 4. Ahorcado.");
+        printf("\n\n 5. Salir.");
+        printf("\n\n Ingrese el numero del juego que dsesea abrir: ");
         scanf("%d",&opcion);
 
         switch (opcion)
@@ -56,7 +56,7 @@ main()
             break;
 
         default:
-            printf("\nIngresaste una opcion erronea, Vuelva a intentarlo.");
+            printf("\n Ingresaste una opcion erronea, vuelva a intentarlo.");
             printf("\n\n");
             system("pause");
             break;
