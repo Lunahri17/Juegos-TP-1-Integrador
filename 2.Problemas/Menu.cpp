@@ -57,6 +57,8 @@ main()
 
         default:
             printf("\nIngresaste una opcion erronea, Vuelva a intentarlo.");
+            printf("\n\n");
+            system("pause");
             break;
         }
 
