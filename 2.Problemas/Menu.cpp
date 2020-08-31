@@ -18,7 +18,7 @@ main()
         printf("\n\n Categoria: Juegos de letras.");
         printf("\n\n 4. Ahorcado.");
         printf("\n\n 5. Salir.");
-        printf("\n\n Ingrese el numero del juego que dsesea abrir: ");
+        printf("\n\n Ingrese el numero del juego que desea abrir: ");
         scanf("%d",&opcion);
 
         switch (opcion)
