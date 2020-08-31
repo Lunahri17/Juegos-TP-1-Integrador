@@ -15,75 +15,90 @@ void adv(int Num1,int Nume)
 {
 	int control=0,dec,con=1,a1,b1,c1,d1;
 	int a,b,c,d,mismaPos=0,DisPos=0,puntaje;
+	
 	srand(time(NULL));
 	Nume=1000+rand() % (10000-1000);
 	
-		printf("\t==Adivinum==\n");
-		printf("\nAdivine el numero de 4 cifras");
+	printf("\t==Adivinum==\n");
+	printf("\nAdivine el numero de 4 cifras");
 		
 		do
 		{
-				printf("\nIntento %d: ",con);
-				scanf("%d",&Num1);
-				if(Num1>=1000 and Num1<=9999)
+			printf("\nIntento %d: ",con);
+			scanf("%d",&Num1);
+			
+			if(Num1>=1000 and Num1<=9999)
 			{
 				descomposicion(Num1,a,b,c,d);
 				descomposicion(Nume,a1,b1,c1,d1);
-					if(a==a1)
+				
+				if(a==a1)
 				{
 					mismaPos++;
 				}		
-			if(a==b1 or a==c1 or a==d1)
-			{
-				DisPos++;
-			}
+				
+				if(a==b1 or a==c1 or a==d1)
+				{
+					DisPos++;
+				}
+
 				if(b==b1)
-			{
-				mismaPos++;
-			}
-			if(b==a1 or b==c1 or b==d1)
-			{
-				DisPos++;
-			}
+				{
+					mismaPos++;
+				}
+				
+				if(b==a1 or b==c1 or b==d1)
+				{
+					DisPos++;
+				}
+				
 				if(c==c1)
-			{
-				mismaPos++;
-			}
+				{
+					mismaPos++;
+				}
+				
 				if(c==a1 or c==b1 or c==d1)
-			{
-				DisPos++;
-			}
+				{
+					DisPos++;
+				}
+
 				if(d==d1)
-			{
-				mismaPos++;
-			}
+				{
+					mismaPos++;
+				}
+				
 				if(d==a1 or d==b1 or d==c1)
-			{
-				DisPos++;
-			}
-		printf("Cant. Misma Posicion: %d - Cant. Distinta Posicion: %d\n",mismaPos,DisPos);
-		mismaPos=0;
-		DisPos=0;
+				{
+					DisPos++;
+				}
+			
+				printf("Cant. Misma Posicion: %d - Cant. Distinta Posicion: %d\n",mismaPos,DisPos);
+				mismaPos=0;
+				DisPos=0;
+				
 				if(Num1==Nume)
-			{
-				printf("\nAdivinaste el numero, Felicidades\n");
+				{
+					printf("\nAdivinaste el numero, Felicidades\n");
+				}
+				else
+				{
+					con++;
+				}
 			}
 			else
 			{
-				con++;
+				printf("Error, el numero ingresado no es de 4 cifras");
 			}
-		}
-		else
-		{
-			printf("Error, el numero ingresado no es de 4 cifras");
-		}
 		
 		}while(Num1!=Nume and con<=10);
+		
 		puntaje=11-con;
+		
 		if(con>10)
 		{
 			printf("\nHas Perdido el numero era: %d\n",Nume);
 		}
+		
 		printf("\nTu Puntaje es de %d\n",puntaje);
 		printf("\n\n");
 		system("pause");
